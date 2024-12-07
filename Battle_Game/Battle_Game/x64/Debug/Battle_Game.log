@@ -1,0 +1,21 @@
+﻿  main.cpp
+D:\VS programs\Battle_Game\sun_bullet_ex.h(29,82): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS programs\Battle_Game\sun_bullet_ex.h(30,81): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS programs\Battle_Game\selector_scene.h(70,84): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS programs\Battle_Game\selector_scene.h(72,100): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS programs\Battle_Game\selector_scene.h(74,98): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS programs\Battle_Game\selector_scene.h(76,115): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+D:\VS programs\Battle_Game\game_scene.h(133,1): warning C4715: “`GameScene::update'::`2'::<lambda_1>::operator()”: 不是所有的控件路径都返回值
+  Battle_Game.vcxproj -> D:\VS programs\Battle_Game\x64\Debug\Battle_Game.exe
