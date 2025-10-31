@@ -38,13 +38,13 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 
  1. 在根目录下创建运行文件夹Runs
     
- 2.该文件夹下创建train和val，用于存放训练集和验证集
+  2.该文件夹下创建train和val，用于存放训练集和验证集
  
- 3.train和val文件夹中分别创建images和labels文件夹，分别存放图片数据和标签数据
+  3.train和val文件夹中分别创建images和labels文件夹，分别存放图片数据和标签数据
  
- 4.（可选）将yolov8n.pt训练文件下载到根目录中
+  4.（可选）将yolov8n.pt训练文件下载到根目录中
  
- 5.复制.py文件到根目录下，尝试运行，如果提示缺少依赖，请自行在终端中使用pip命令进行补充安装
+  5.复制.py文件到根目录下，尝试运行，如果提示缺少依赖，请自行在终端中使用pip命令进行补充安装
  
 
  >请参考以下文章，创建新的虚拟环境后配置labelimg环境，为后续标注数据集做准备。
