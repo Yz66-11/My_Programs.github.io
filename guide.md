@@ -19,7 +19,7 @@ conda create -n myenv(此处环境名可以自定义) python 3.9.10
 conda activate myenv
 ```
    在该环境中安装Pytorch,先进入设备管理器，查看显示适配器信息
-   [![]]/main/Gd1.png)
+   [![]](/main/Gd1.png)
    如有独立显卡，请参照以下文章安装CUDA和Cudnn
    https://blog.csdn.net/weixin_52677672/article/details/135853106?ops_request_misc=elastic_search_misc&request_id=6885b12515e521efe810508268a91565&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135853106-null-null.142^v102^pc_search_result_base3&utm_term=cuda%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&spm=1018.2226.3001.4187
 > 如果没有独立显卡，请跳过此步骤
