@@ -35,7 +35,7 @@ pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu12
 ```
 安装完成后以管理员身份运行cmd，进入python环境，输入import torch，未出现报错信息则说明安装成功
 ## 二、构建项目文件结构
- 1. 在根目录下创建运行文件夹Runs
+ 1. 在根目录下创建运行文件夹model
     
   2. 该文件夹下创建train和val，用于存放训练集和验证集
  
