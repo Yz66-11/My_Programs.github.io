@@ -1,0 +1,55 @@
+{
+  "summary": {
+    "total_students": 4,
+    "present_students": 0,
+    "attendance_rate": 0.0,
+    "phone_users_count": 0,
+    "total_phone_events": 0,
+    "analysis_duration_frames": 510,
+    "report_time": "2026-03-08 16:41:18"
+  },
+  "attendance_details": {
+    "162210105 麦迪娜·地力木拉提": {
+      "detected": false,
+      "detection_count": 0,
+      "first_detection": "None",
+      "last_detection": "None"
+    },
+    "162230218 荀宇": {
+      "detected": false,
+      "detection_count": 0,
+      "first_detection": "None",
+      "last_detection": "None"
+    },
+    "李若芊": {
+      "detected": false,
+      "detection_count": 0,
+      "first_detection": "None",
+      "last_detection": "None"
+    },
+    "车晨曦": {
+      "detected": false,
+      "detection_count": 0,
+      "first_detection": "None",
+      "last_detection": "None"
+    }
+  },
+  "behavior_details": {
+    "162210105 麦迪娜·地力木拉提": {
+      "phone_usage_count": 0,
+      "phone_usage_times": []
+    },
+    "162230218 荀宇": {
+      "phone_usage_count": 0,
+      "phone_usage_times": []
+    },
+    "李若芊": {
+      "phone_usage_count": 0,
+      "phone_usage_times": []
+    },
+    "车晨曦": {
+      "phone_usage_count": 0,
+      "phone_usage_times": []
+    }
+  }
+}
