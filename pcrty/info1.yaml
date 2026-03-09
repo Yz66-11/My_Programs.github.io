@@ -1,0 +1,5 @@
+path: D:\PyCharm 2025.1.1\PyCharm pro\pcrty
+train: student_photos
+val: student_photos
+nc: 2
+names: ['xunY','maiDI']

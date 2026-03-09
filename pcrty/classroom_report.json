@@ -1,0 +1,22 @@
+{
+    "summary": {
+        "date": "2026-03-09",
+        "attendance": [
+            "lrq",
+            "wxx",
+            "zd"
+        ]
+    },
+    "behavior_records": [
+        {
+            "name": "Unknown",
+            "behavior": "Sleeping",
+            "first_detected": "21:48:44"
+        },
+        {
+            "name": "wxx",
+            "behavior": "Sleeping",
+            "first_detected": "21:49:16"
+        }
+    ]
+}
