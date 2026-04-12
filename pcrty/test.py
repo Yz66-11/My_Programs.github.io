@@ -89,7 +89,7 @@ class ProfessionalMonitor:
                     cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
 
                     # --- 强制刷新逻辑：大幅提高采样频率 ---
-                    # 每 10 帧（约 0.3 秒）不管有没有结果，都强行送入后台识别
+                    # 每 10 帧（约 0.3 秒）不管有没有结果，都送入后台识别
                     if frame_idx % 10 == 0:
                         margin = int((x2 - x1) * 0.2)
                         roi = frame[max(0, y1 - margin):min(h, y2 + margin), max(0, x1 - margin):min(w, x2 + margin)]
@@ -129,7 +129,7 @@ class ProfessionalMonitor:
                     cv2.putText(frame, f"{name} | {status}", (x1, y1 - 10), 0, 0.6, color, 2)
 
             # --- 关键修改：如果画面中没检测到 ID，直接清空所有缓存 ---
-            # 这样镜头挪开后，旧名字绝对不会留给下一个人
+            # 镜头挪开，旧名字不会留给下一个人
             if face_results[0].boxes.id is None:
                 self.results_cache.clear()
 

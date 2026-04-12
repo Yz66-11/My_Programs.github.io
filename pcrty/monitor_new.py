@@ -16,18 +16,18 @@ class ClassroomFinalSystem:
         self.pose_model = YOLO("yolov8n-pose.pt")
         self.behavior_detector = YOLO("yolov8n.pt")
 
-        # 2. 特徵數據庫
+        # 2. 特征数据库
         if os.path.exists(db_path):
             self.known_db = np.load(db_path, allow_pickle=True).item()
         else:
             self.known_db = {}
 
-        # 3. 識別隊列
+        # 3. 识别队列
         self.task_queue = queue.Queue(maxsize=5)
         self.results_cache = {}  # {track_id: name}
         self.is_running = True
 
-        # 4. 報告數據結構與行為去重字典
+        # 4. 报告数据结构与行为去重字典
         self.attendance = set()
         self.violation_logs = []
         self.record_locked = {}
@@ -59,18 +59,17 @@ class ClassroomFinalSystem:
                 continue
 
     def start(self, source=0):
-        # 核心修改：source 可以是 0 (攝像頭) 或 "video.mp4" (路徑)
+        # 核心修改：source 可以是 0 (摄像头) 或 "video.mp4" (路径)
         cap = cv2.VideoCapture(source)
 
-        # 針對視頻文件優化：如果 source 是字符串，獲取視頻原有的 FPS
-        is_video_file = isinstance(source, str)
+        #is_video_file = isinstance(source, str)
 
         frame_idx = 0
 
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
-                print("視頻結束或無法讀取源")
+                print("视频结束或无法读取资源")
                 break
 
             frame_idx += 1
@@ -156,19 +155,19 @@ class ClassroomFinalSystem:
 if __name__ == "__main__":
     system = ClassroomFinalSystem()
 
-    # 用戶自主選擇邏輯
-    print("=== 課堂監控系統 ===")
-    print("1. 實時攝像頭監控")
-    print("2. 載入視頻文件監控")
-    choice = input("請選擇 (1/2): ")
+    # 用户自主选择
+    print("=== 课堂监控系统 ===")
+    print("1. 实时摄像头")
+    print("2. 载入视频文件")
+    choice = input("请选择 (1/2): ")
 
     if choice == "1":
-        system.start(source=0)  # 默認攝像頭 ID
+        system.start(source=0)  # 默认摄像头ID
     elif choice == "2":
-        video_path = input("請輸入視頻文件路徑 (例如: test.mp4): ")
+        video_path = input("请输入视频文件路径 (例如: test.mp4): ")
         if os.path.exists(video_path):
-            system.start(source=video_path)  # 傳入視頻路徑
+            system.start(source=video_path)  # 传入视频路径
         else:
-            print("文件路徑不存在")
+            print("文件路径不存在")
     else:
-        print("無效選擇")
+        print("无效选择")
