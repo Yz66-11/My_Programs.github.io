@@ -1,32 +1,18 @@
 {
-    "summary": {
-        "date": "2026-04-12",
-        "attendance": [
-            "hpq",
-            "dpy",
-            "lyz"
+    "report_date": "2026-04-16 13:00:09",
+    "attendance_records": {
+        "total_count": 1,
+        "students": [
+            {
+                "name": "lyz",
+                "check_in_time": "13:00:03",
+                "confirm_frames": 5,
+                "confirm_duration": "3.8s"
+            }
         ]
     },
-    "behavior_records": [
-        {
-            "name": "Unknown",
-            "behavior": "Sleeping",
-            "first_detected": "14:04:48"
-        },
-        {
-            "name": "Unknown",
-            "behavior": "Using Phone",
-            "first_detected": "14:04:54"
-        },
-        {
-            "name": "hpq",
-            "behavior": "Using Phone",
-            "first_detected": "14:04:55"
-        },
-        {
-            "name": "lyz",
-            "behavior": "Using Phone",
-            "first_detected": "14:05:08"
-        }
-    ]
+    "behavior_records": {
+        "total_count": 0,
+        "violations": []
+    }
 }
